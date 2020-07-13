@@ -1,0 +1,144 @@
+/* block1
+===================*/
+.block1 {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+  min-height: 700px;
+}
+
+.block1 .block1__bg {
+  background: rgba(0, 0, 0, 0.6) url(../img/line2.png);
+  position: relative;
+  height: 100%;
+  color: #fff;
+}
+
+.block1__flex {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.block1__flex .container {
+  padding: 0 15px;
+}
+
+.block1__flex h1 {
+  margin: 0;
+  margin-top: 86px;
+  font-size: 45px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.block1__flex h1 span {
+  color: #f5bf23;
+}
+
+.block1__flex ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
+}
+
+.block1__flex ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.block1__flex ul li:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #f5bf23;
+  left: 0;
+  top: 6px;
+}
+
+.marquiz__container {
+  width: 100%;
+  text-align: left;
+}
+
+.marquiz__container a {
+  background: #f5bf23;
+  color: #000;
+  -webkit-box-shadow: 1.7px 5.8px 21px 0 rgba(245, 191, 35, 0.5);
+  box-shadow: 1.7px 5.8px 21px 0 rgba(245, 191, 35, 0.5);
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  border: .00001px solid;
+  padding: 19px 22px;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquiz__container a:hover {
+  background: #f6c73c;
+}
+
+.marquiz__container a:after {
+  content: "";
+  position: absolute;
+  left: -120%;
+  top: -50%;
+  bottom: -50%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.6)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.6) 100%);
+  width: 45px;
+  -webkit-transform: skewX(-22deg);
+  -ms-transform: skewX(-22deg);
+  transform: skewX(-22deg);
+  -webkit-animation-name: blick;
+  animation-name: blick;
+  -webkit-animation-duration: 3.3s;
+  animation-duration: 3.3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes blick {
+  0% {
+    position: absolute;
+    left: -120%;
+  }
+  65% {
+    position: absolute;
+    left: 100%;
+  }
+  100% {
+    position: absolute;
+    left: 120%;
+  }
+}
+
+@keyframes blick {
+  0% {
+    position: absolute;
+    left: -120%;
+  }
+  65% {
+    position: absolute;
+    left: 100%;
+  }
+  100% {
+    position: absolute;
+    left: 120%;
+  }
+}
